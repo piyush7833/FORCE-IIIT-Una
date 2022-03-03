@@ -1,0 +1,136 @@
+@import'swiper/CSS/autoplay';
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background:blanchedalmond;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 23vw;
+  height: 48vh;
+  background-color:blanchedalmond;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 18vw;
+  height: 30vh;
+  margin:auto;
+}
+.swiper-slide .box {
+  display: block;
+  border: 2px solid orange;
+  margin-left: 3vw;
+  /* margin-right:2vw ; */
+  padding: 1rem;
+  border-radius: 28px;
+  background-color: orange;
+  height: 40vh;
+  width: 20vw;
+  margin-top: 10vh;
+  box-shadow: 2px 5px 5px 5px  rgb(194, 183, 34);
+
+}
+.swiper-slide .box:hover{
+    transform:translateZ(8vh)
+}
+.h-primary::before{
+    content: "";
+    position:fixed;
+    background:url(img/t3.gif)no-repeat center center/cover;
+    height:100vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.4;
+    margin-top:2vh ;
+    margin-left:-32.5vw ;
+}
+
+.h-primary{
+    font-size: 5rem;
+}
+.h-secondary{   
+    font-size: 2.2rem;
+}
+.h-secondary1{   
+    font-size: 2.2rem;
+    margin-top:9vh;
+    margin-bottom:-14vh;
+}
+h3{
+    margin-top:1vh;
+    font-size:1.5em;
+}
+p{
+  font-size: 2em;
+}
+.swiper-slide p{
+    font-size: 1.2em;
+}
+.swiper-button-prev{
+    position:relative;
+    overflow:space;
+    margin-top: -5vh;
+}
+.swiper-button-next{
+    position: relative;
+    margin-left: 97vw;
+    margin-top: -4vh;
+    /* margin-top: 20vh; */
+}
+.swiper-3d .swiper-slide-shadow-left {
+    background-image: none;
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+.slide-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: ; */
+  }
+  #next-btn,
+  #prev-btn {
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    color: white;
+  }
+  #next-btn:focus,
+  #prev-btn:focus {
+    outline: none;
+  }
+  #last{
+    width: 100vw;
+  }
+
+
+
+
+
